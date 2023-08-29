@@ -1,0 +1,106 @@
+/* Write your CSS code here */
+.nav-header{
+    display: flex;
+    justify-content: space-around;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    max-width: 1110px;
+    padding:15px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+.website-logo-img{
+    width:120px;
+}
+.logout-img{
+    width: 24px;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex:1;
+    list-style-type: none;
+}
+.nav-item-images{
+    width:100%;
+}
+.nav-item-small-view{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:70px;
+    background-color: #e6f6ff;
+    flex:1;
+    list-style-type: none;
+}
+.nav-item{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+    color: #475569;
+}
+.logout-btn{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background:transparent
+}
+.nav-list-item-small-img{
+    cursor: pointer;
+    list-style-type: none;
+}
+.nav-images{
+    width: 24px;
+}
+.logout-button{
+    background-color: #0967d2;
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+@media screen and (min-width:768px){
+    .header-content{
+        display: none;
+    }
+    .website-logo-img{
+        width:165px;
+    }
+    .nav-item-images{
+        display: none;
+    }
+    .logout-btn{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+    .nav-header{
+        flex-direction: column;
+    }
+    .header{
+        flex-direction: column;
+        width:100%;
+    }
+    .header-content-large-view{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .logout-button{
+        display: none;
+    }
+}

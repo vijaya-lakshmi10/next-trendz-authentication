@@ -1,0 +1,105 @@
+/* Write your CSS code here */
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:90%;
+    max-width: 1110px;
+    margin: auto;
+} 
+
+.login-img{
+    width:278px;
+}
+.logo-img-view{
+    width:165px;
+    margin-top:50px;
+    margin-bottom: 35px;
+}
+.logo-img{
+    width:185px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    width:100%;
+    max-width: 350px;
+}
+.login-sub-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width:100%;
+}
+.label{
+    font-family: 'Roboto';
+    font-size:16px;
+    color:#475569;
+    font-weight: bold;
+}
+.value{
+    font-size: 14px;
+    border: 1px solid #d7dfe9;
+    background-color: #e2e8f0;
+    border-radius: 5px;
+    height: 40px;
+    color:#64748b;
+    margin-top:10px;
+    padding:8px 16px 8px 16px;
+    
+}
+.login-btn{
+    background-color: #0b69ff;
+    padding:10px;
+    border-radius: 8px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    height:40px;
+    width:100%;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-top: 20px;
+}
+.error-message{
+    color:#ff0b37;
+    font-size: 14px;
+    font-family: 'Roboto';
+    align-self: start;
+
+}
+@media screen and (max-width:991px){
+    .logo-img{
+        display: none;
+    }
+}
+@media screen and (min-width:992px){
+   .login-container{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo-img-view{
+    display: none;
+}
+.login-img{
+    width: 60%;
+    max-width: 524px;
+    flex-shrink: 1;
+    margin-right: 20px;
+}
+.login-form{
+    flex-shrink: 0;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    width:350px;
+}
+}
+
+
+
